@@ -1,0 +1,42 @@
+{
+  "name": "react-draft",
+  "version": "1.0.0",
+  "description": "",
+  "entry": {
+    "index": "./src/index.jsx",
+    "vendor": [
+      "react",
+      "react-dom"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "atool-build": "^0.11.1",
+    "babel-plugin-import": "^1.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "dora": "^0.4.3",
+    "dora-plugin-proxy": "^0.8.5",
+    "dora-plugin-webpack": "^0.8.1",
+    "dora-plugin-webpack-hmr": "^0.2.1",
+    "mockjs": "^1.0.1-beta3",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "draft-js": "^0.10.1",
+    "qs": "^6.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.3",
+    "redux-promise": "^0.5.3"
+  },
+  "scripts": {
+    "build": "set NODE_ENV=production && atool-build",
+    "start": "dora --plugins \"proxy?watchDirs=./mock,webpack,webpack-hmr\" --port 8001"
+  }
+}
