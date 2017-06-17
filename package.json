@@ -26,6 +26,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "draft-js": "^0.10.1",
+    "immutable": "^3.8.1",
     "qs": "^6.4.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
